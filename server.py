@@ -1,17 +1,10 @@
-from flask import Flask, request, jsonify
+from flask import Flask
 
 app = Flask(__name__)
 
-# Default homepage route
 @app.route('/')
 def home():
-    return "Flask server is running!"
+    return "API is running!"
 
-# API route for testing
-@app.route('/check_url', methods=['POST'])
-def check_url():
-    data = request.get_json()
-    return jsonify({"message": "URL checked successfully", "data": data})
-
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=10000)  # Change port to 10000 or use Render's default port
