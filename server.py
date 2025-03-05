@@ -1,6 +1,6 @@
 import os
-import requests
-from flask import Flask, request, jsonify
+import requests # type: ignore
+from flask import Flask, request, jsonify # type: ignore
 
 # Google Safe Browsing API Key (Ensure you replace it with a valid key)
 GOOGLE_API_KEY = "AIzaSyDP_EMegtgOGVC4uNAQ14RYfQInDW_dkLA"
