@@ -39,8 +39,4 @@ def detect_threat():
 
 if __name__ == "__main__":  # Corrected block
     port = int(os.environ.get("PORT", 10000))  # Use Render's dynamic port
-<<<<<<< HEAD
     app.run(host="0.0.0.0", port=port)
-=======
-    app.run(host="0.0.0.0", port=port)
->>>>>>> 37d53698c35acb56cc1857fcb89785cc8fbde007
